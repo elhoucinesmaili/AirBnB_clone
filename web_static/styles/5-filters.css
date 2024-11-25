@@ -1,0 +1,68 @@
+/* Container for the search bar */
+div.container {
+    max-width: 1000px; /* Set the maximum width of the container */
+    margin: 30px auto; /* Center the container with 30px top and bottom margins */
+    text-align: center; /* Center-align text within the container */
+}
+
+/* Filters section in the search bar */
+section.filters {
+    background-color: white; /* White background for the section */
+    height: 70px; /* Set the height of the section */
+    width: 100%; /* Full width of the parent element */
+    border: 1px solid #DDDDDD; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for the button in the filters section */
+section.filters button {
+    background-color: #FF5A5F; /* Red background color */
+    height: 48px; /* Height of the button */
+    width: 20%; /* Set width of the button to 20% of its parent */
+    border: 0; /* Remove the border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Set the font size */
+    color: #FFFFFF; /* White text color */
+    float: right; /* Align the button to the right */
+    margin: 11px 30px; /* Set margin around the button */
+}
+
+/* Hover effect for the button */
+section.filters button:hover {
+    opacity: .9; /* Slight opacity change on hover */
+}
+
+/* Location and amenities part of the search bar */
+.locations,
+.amenities {
+    height: 100%; /* Full height of the parent container */
+    width: 25%; /* Set width to 25% of the parent */
+    float: left; /* Float the sections to the left */
+}
+
+/* Border on the right of the location section */
+.locations {
+    border-right: 1px solid #DDDDDD; /* Add border on the right */
+}
+
+/* Heading style for location and amenities */
+.locations h3,
+.amenities h3 {
+    font-weight: 600; /* Semi-bold text */
+    font-size: 16px; /* Set font size */
+    margin-top: 20px; /* Margin on top */
+    margin-bottom: 0px; /* Remove bottom margin */
+    text-align: left; /* Left align text */
+    margin-left: 30px; /* Add margin to the left */
+}
+
+/* Subheading style for location and amenities */
+.locations h4,
+.amenities h4 {
+    font-weight: 400; /* Normal font weight */
+    font-size: 14px; /* Set font size */
+    margin-top: 0px; /* Remove top margin */
+    margin-bottom: 0px; /* Remove bottom margin */
+    text-align: left; /* Left align text */
+    margin-left: 30px; /* Add margin to the left */
+}

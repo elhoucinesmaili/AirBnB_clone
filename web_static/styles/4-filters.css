@@ -1,0 +1,29 @@
+div.container {
+    max-width: 1000px; /* Set maximum width of the container */
+    margin: 30px auto; /* Center container with 30px margin on top and bottom */
+    text-align: center; /* Center text inside the container */
+}
+
+section.filters {
+    background-color: #FFFFFF; /* Set background color to white */
+    height: 70px; /* Set height of the section */
+    width: 100%; /* Set width to 100% of the parent */
+    border: 1px solid #DDDDDD; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+section.filters button {
+    background-color: #FF5A5F; /* Set background color of the button */
+    height: 48px; /* Set button height */
+    width: 20%; /* Set width to 20% of its parent */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    font-size: 18px; /* Set font size */
+    color: #FFFFFF; /* White text color */
+    float: right; /* Align button to the right */
+    margin: 11px 30px; /* Set margin around the button */
+}
+
+section.filters button:hover {
+    opacity: 0.9; /* Slight opacity change on hover */
+}

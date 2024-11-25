@@ -1,0 +1,141 @@
+/* Filters Section */
+section.filters {
+  background-color: #FFFFFF;
+  height: 70px;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+
+/* Clearfix for filters section */
+section.filters:before,
+section.filters:after {
+  content: "";
+  display: table;
+}
+
+section.filters:after {
+  clear: both;
+}
+
+section.filters {
+  *zoom: 1;
+}
+
+/* Button styling */
+section.filters button {
+  background-color: #FF5A5F;
+  height: 48px;
+  width: 20%;
+  border: 0;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #FFFFFF;
+  float: right;
+  margin: 11px 30px;
+}
+
+/* Button hover effect */
+section.filters button:hover {
+  opacity: .9;
+}
+
+/* Locations and amenities part of the search bar */
+.locations,
+.amenities {
+  height: 100%;
+  width: 25%;
+  float: left;
+}
+
+/* Divider between location and amenities */
+.locations {
+  border-right: 1px solid #DDDDDD;
+}
+
+/* Header styling for location and amenities */
+.locations h3,
+.amenities h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Sub-header styling for location and amenities */
+.locations h4,
+.amenities h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Popover styling */
+.popover {
+  display: none;
+  background-color: #FAFAFA;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+}
+
+/* Popover header styling */
+.popover h2 {
+  font-size: 16px;
+}
+
+/* List item styling */
+li {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Display popover on hover */
+.locations:hover .popover,
+.amenities:hover .popover {
+  display: block;
+}
+
+/* Responsive layout for small screens */
+@media only screen and (max-width: 720px) {
+  .filters {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+
+  /* Button flex style for small screens */
+  section.filters button {
+    flex: 1;
+  }
+
+  /* Locations and amenities adjust width and layout for small screens */
+  .filters .locations,
+  .filters .amenities {
+    flex: 2;
+    height: auto;
+    width: 50%;
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  /* Adjust popover for small screens */
+  .filters .locations:hover .popover,
+  .filters .amenities:hover .popover {
+    margin-left: auto;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+  }
+
+  /* Divider between location and amenities for small screens */
+  .filters .amenities:hover {
+    border-top: 1px solid #DDDDDD;
+  }
+}

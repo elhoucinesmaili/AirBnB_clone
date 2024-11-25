@@ -1,0 +1,9 @@
+header {
+    background-color: #FFFFFF; /* Set background color to white */
+    height: 70px; /* Set the height of the header */
+    width: 100%; /* Make the header take full width */
+    border-bottom: 1px solid #CCCCCC; /* Add a bottom border with a light grey color */
+    background-image: url(../images/logo.png); /* Set the background image (logo) */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: 20px 50%; /* Position the background image at 20px from the left and vertically centered */
+}

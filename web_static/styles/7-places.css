@@ -1,0 +1,31 @@
+/* Center alignment for places section */
+.places {
+    text-align: center; /* Align text to center */
+}
+
+/* Heading styling for places section */
+.places h1 {
+    font-size: 30px; /* Font size */
+    text-align: left; /* Align text to the left */
+}
+
+/* Article styling */
+article {
+    width: 390px; /* Set width of articles */
+    border: 1px solid #FF5A5F; /* Red border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 20px; /* Padding inside article */
+    margin: 20px; /* Margin around article */
+    display: inline-block; /* Display articles inline */
+}
+
+/* Heading inside article */
+article h2 {
+    font-size: 30px; /* Font size for h2 inside articles */
+    text-align: center; /* Center align h2 text */
+}
+
+/* Footer positioning */
+footer {
+    position: relative; /* Relative position for footer */
+}

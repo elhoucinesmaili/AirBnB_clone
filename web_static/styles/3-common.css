@@ -1,0 +1,7 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: #484848; /* Set text color to a grey shade */
+    font-size: 14px; /* Set the font size to 14px */
+    font-family: 'Circular', 'Helvetica Neue', Arial, sans-serif; /* Use specific font stack */
+}

@@ -1,0 +1,5 @@
+header {
+    background-color: #FF0000; /* Sets the background color to red */
+    height: 70px; /* Sets the height of the header to 70px */
+    width: 100%; /* Makes the header take the full width of the viewport */
+}

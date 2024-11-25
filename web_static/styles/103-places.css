@@ -1,0 +1,193 @@
+/* Flexbox Layout for Places Section */
+.places {
+  display: flex; /* Flexbox layout */
+  flex-flow: row wrap; /* Allow wrapping of elements */
+  justify-content: center; /* Center align content */
+  width: 100%; /* Full width */
+}
+
+/* Heading style inside places section */
+.places h1 {
+  flex-basis: 100%; /* Full width for heading */
+  font-size: 30px; /* Set font size */
+  text-align: left; /* Left-align the text */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* Box-sizing for proper element sizing */
+}
+
+/* Article element inside places */
+.places article {
+  flex-basis: 390px; /* Flex item width */
+  flex-direction: row; /* Arrange child elements in a row */
+  border: 1px solid #FF5A5F; /* Red border around article */
+  border-radius: 4px; /* Rounded corners */
+  padding: 20px; /* Padding inside the article */
+  margin: 20px; /* Margin between articles */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Top section of the article */
+.places article .places_top {
+  display: flex;
+  flex-direction: row; /* Horizontal arrangement */
+  justify-content: center; /* Center align items */
+}
+
+/* Heading inside the article */
+.places article h2 {
+  font-size: 30px; /* Set font size */
+  margin-top: 5px; /* Margin at the top */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center-align the heading */
+  align-items: center; /* Align text to center */
+  flex: 5; /* Flex grow property */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* Box-sizing for proper sizing */
+}
+
+/* Price by night circle styling */
+.places article .price_by_night {
+  color: #FF5A5F; /* Red color text */
+  border: 4px solid #FF5A5F; /* Red border */
+  border-radius: 100%; /* Circular border */
+  min-width: 60px; /* Minimum width of circle */
+  height: 60px; /* Set height */
+  line-height: 60px; /* Align text vertically in circle */
+  font-size: 30px; /* Font size inside the circle */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center align text */
+  align-items: center; /* Center align vertically */
+  flex: 1; /* Flex grow property */
+}
+
+/* Information section styling */
+.places article .information {
+  height: 100%; /* Full height */
+  border-top: 1px solid #DDDDDD; /* Light top border */
+  border-bottom: 1px solid #DDDDDD; /* Light bottom border */
+  align-items: center; /* Center align items */
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Horizontal layout */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+/* Styling for max guest, rooms, and bathrooms section */
+div.max_guest,
+div.number_rooms,
+div.number_bathrooms {
+  line-height: 140px; /* Line height for alignment */
+  width: 100px; /* Fixed width */
+  height: 100%; /* Full height */
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Horizontal layout */
+  background-repeat: no-repeat; /* Prevent background repetition */
+}
+
+/* Background icons for guest, rooms, and bathrooms */
+.max_guest {
+  background-image: url("../images/icon_group.png");
+}
+
+.number_rooms {
+  background-image: url("../images/icon_bed.png");
+}
+
+.number_bathrooms {
+  background-image: url("../images/icon_bath.png");
+}
+
+/* Styling for user and description sections */
+div.user,
+div.description {
+  display: flex; /* Flexbox layout */
+  align-items: flex-start; /* Align to top */
+  margin-bottom: 10px; /* Margin at the bottom */
+  margin-top: 10px; /* Margin at the top */
+}
+
+/* Styling for amenities and reviews sections */
+.places article .amenities,
+.places article .reviews {
+  position: relative; /* Position relative to parent */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  margin: 40px 0 40px; /* Margin around the sections */
+  width: 100%; /* Full width */
+  padding: 0; /* No padding */
+}
+
+/* Headings inside amenities and reviews */
+.places article .amenities h2,
+.places article .reviews h2 {
+  size: 16px; /* Set font size */
+  border-bottom: 1px solid #DDDDDD; /* Bottom border */
+  justify-content: flex-start; /* Align to left */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* Box-sizing for proper sizing */
+}
+
+/* List layout for amenities and reviews */
+.places article .amenities ul,
+.places article .reviews ul {
+  padding: 0; /* No padding */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange list items vertically */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+/* List item styles */
+.places article .amenities ul li,
+.places article .reviews ul li {
+  line-height: 30px; /* Line height for spacing */
+  padding-left: 50px; /* Left padding for icon */
+  background-position: top left; /* Icon positioning */
+  background-size: 30px; /* Icon size */
+  background-repeat: no-repeat; /* Prevent icon repetition */
+  list-style-type: none; /* Remove default list style */
+}
+
+/* Text styling for reviews */
+.places article .reviews ul li h3 {
+  font-size: 14px; /* Font size for review titles */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* Box-sizing for proper sizing */
+}
+
+/* Paragraph text inside reviews */
+.places article .reviews ul li p {
+  font-size: 12px; /* Font size for review content */
+}
+
+/* Icon styling for amenities */
+.icon_wifi {
+  background-image: url("../images/icon_wifi.png");
+}
+
+.icon_tv {
+  background-image: url("../images/icon_tv.png");
+}
+
+.icon_pets {
+  background-image: url("../images/icon_pets.png");
+}
+
+/* Footer Styling */
+footer {
+  position: relative; /* Position relative to parent */
+}
+
+/* Responsive Design - Adjusting layout for smaller screens */
+@media only screen and (max-width: 1000px) {
+  .places h1 {
+    width: 90%; /* Width of the heading */
+    margin: 5%; /* Margin around the heading */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /* Box-sizing for proper element sizing */
+  }
+}

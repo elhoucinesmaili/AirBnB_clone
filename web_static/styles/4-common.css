@@ -1,0 +1,12 @@
+body {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    color: #484848; /* Set text color */
+    font-size: 14px; /* Set font size */
+    font-family: Circular, "Helvetica Neue", Arial, sans-serif; /* Set font family */
+}
+
+div.container {
+    max-width: 1000px; /* Set the maximum width of the container */
+    margin: 30px auto; /* Centers the container with a 30px top and bottom margin */
+}

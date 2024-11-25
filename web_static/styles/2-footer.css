@@ -1,0 +1,9 @@
+footer {
+    background-color: #00FF00; /* Sets the background color to green */
+    height: 60px; /* Sets the height of the footer */
+    width: 100%; /* Makes the footer take the full width of the viewport */
+    position: fixed; /* Fixes the footer at the bottom of the page */
+    bottom: 0; /* Positions the footer at the very bottom of the page */
+    text-align: center; /* Centers the text inside the footer */
+    line-height: 60px; /* Vertically centers the text by setting the line-height equal to the height */
+}

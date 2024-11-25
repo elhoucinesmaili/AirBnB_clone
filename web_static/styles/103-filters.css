@@ -1,0 +1,141 @@
+/* Filters Section Styling */
+section.filters {
+    background-color: #FFFFFF; /* White background for the filter section */
+    height: 70px; /* Set fixed height for the filters */
+    width: 100%; /* Full width */
+    border: 1px solid #DDDDDD; /* Light gray border around the section */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Clearfix for Filters Section */
+section.filters:before,
+section.filters:after {
+    content: ""; /* Empty content to clear floats */
+    display: table; /* Table layout for clearfix */
+}
+
+section.filters:after {
+    clear: both; /* Clear floats after the filters */
+}
+
+section.filters {
+    *zoom: 1; /* For older versions of Internet Explorer */
+}
+
+/* Button Styling inside Filters Section */
+section.filters button {
+    background-color: #FF5A5F; /* Red background for buttons */
+    height: 48px; /* Button height */
+    width: 20%; /* 20% width for the button */
+    border: 0; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Font size for text */
+    color: #FFFFFF; /* White text color */
+    float: right; /* Float button to the right */
+    margin: 11px 30px; /* Margin around the button */
+}
+
+/* Button Hover Effect */
+section.filters button:hover {
+    opacity: .9; /* Slightly transparent on hover */
+}
+
+/* Styling for Location and Amenities Sections */
+.locations,
+.amenities {
+    height: 100%; /* Full height */
+    width: 25%; /* 25% width for each section */
+    float: left; /* Float sections to the left */
+}
+
+.locations {
+    border-right: 1px solid #DDDDDD; /* Border between location and amenities */
+}
+
+/* Styling for Headings inside Location and Amenities */
+.locations h3,
+.amenities h3 {
+    font-weight: 600; /* Bold font */
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Margin at the top */
+    margin-bottom: 0px; /* No bottom margin */
+    text-align: left; /* Align text to the left */
+    margin-left: 30px; /* Left margin */
+    box-sizing: border-box; /* Box-sizing for padding and borders */
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400; /* Normal font weight */
+    font-size: 14px; /* Font size */
+    margin-top: 0px; /* No top margin */
+    margin-bottom: 0px; /* No bottom margin */
+    text-align: left; /* Align text to the left */
+    margin-left: 30px; /* Left margin */
+    box-sizing: border-box; /* Box-sizing for padding and borders */
+}
+
+/* Popover (Hover Content) Styling */
+.popover {
+    display: none; /* Initially hidden */
+    background-color: #FAFAFA; /* Light gray background */
+    border: 1px solid #DDDDDD; /* Border around the popover */
+    border-radius: 4px; /* Rounded corners */
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+}
+
+/* Styling for Popover Heading */
+.popover h2 {
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Box-sizing for padding and borders */
+}
+
+/* List Item Styling */
+li {
+    list-style-type: none; /* Remove default list bullets */
+    margin-top: 10px; /* Margin at the top */
+    margin-bottom: 10px; /* Margin at the bottom */
+}
+
+/* Display Popover on Hover */
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block; /* Show popover on hover */
+}
+
+/* Responsive Layout for Small Screens */
+@media only screen and (max-width: 720px) {
+    /* Adjust layout for smaller screens */
+    .filters {
+        display: flex; /* Use flexbox layout */
+        flex-direction: row; /* Row layout */
+        height: auto; /* Auto height */
+    }
+  
+    section.filters button {
+        flex: 1; /* Make button take up remaining space */
+    }
+  
+    .filters .locations,
+    .filters .amenities {
+        flex: 2; /* Each section takes up 2 parts */
+        height: auto; /* Auto height for sections */
+        width: 50%; /* 50% width for each section */
+        border-bottom: 1px solid #DDDDDD; /* Border at the bottom */
+    }
+  
+    /* Adjust popover position on hover */
+    .filters .locations:hover .popover,
+    .filters .amenities:hover .popover {
+        margin-left: auto; /* Center the popover */
+        position: relative; /* Relative positioning */
+        width: 50%; /* Popover width at 50% */
+        z-index: 1; /* Ensure popover is above other elements */
+    }
+  
+    /* Add top border to amenities on hover */
+    .filters .amenities:hover {
+        border-top: 1px solid #DDDDDD;
+    }
+}

@@ -1,0 +1,96 @@
+/* Search bar styling */
+div.container {
+    max-width: 1000px; /* Max width of the container */
+    margin: 30px auto; /* Centered container with margin */
+    /* text-align: center; */ /* Removed text-align to allow custom alignment */
+}
+
+/* Filters section of the search bar */
+section.filters {
+    background-color: white; /* White background for filters */
+    height: 70px; /* Height of the filters section */
+    width: 100%; /* Full width of the parent */
+    border: 1px solid #DDDDDD; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Button inside the filters section */
+section.filters button {
+    background-color: #FF5A5F; /* Red background */
+    height: 48px; /* Button height */
+    width: 20%; /* Button width */
+    border: 0; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    color: #FFFFFF; /* White text color */
+    float: right; /* Right-aligned button */
+    margin: 11px 30px; /* Margins around the button */
+}
+
+/* Hover effect for the button */
+section.filters button:hover {
+    opacity: .9; /* Slight opacity change on hover */
+}
+
+/* Location and amenities section */
+.locations,
+.amenities {
+    height: 100%; /* Full height */
+    width: 25%; /* Set width to 25% */
+    float: left; /* Float left */
+}
+
+/* Right border for the locations section */
+.locations {
+    border-right: 1px solid #DDDDDD; /* Light gray border */
+}
+
+/* Styling for location and amenities headings */
+.locations h3,
+.amenities h3 {
+    font-weight: 600; /* Semi-bold */
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+    text-align: left; /* Align text to the left */
+    margin-left: 30px; /* Left margin */
+}
+
+/* Styling for subheadings in location and amenities */
+.locations h4,
+.amenities h4 {
+    font-weight: 400; /* Normal font weight */
+    font-size: 14px; /* Font size */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+    text-align: left; /* Align text to the left */
+    margin-left: 30px; /* Left margin */
+}
+
+/* Popover element styling (hidden by default) */
+.popover {
+    display: none; /* Hidden by default */
+    background-color: #FAFAFA; /* Light gray background */
+    border: 1px solid #DDDDDD; /* Border around popover */
+    border-radius: 4px; /* Rounded corners */
+    position: relative; /* Position relative to parent */
+    z-index: 1; /* Ensure popover appears above other elements */
+}
+
+/* Styling for heading inside the popover */
+.popover h2 {
+    font-size: 16px; /* Set font size */
+}
+
+/* List items within the popover */
+li {
+    list-style-type: none; /* Remove list style */
+    margin-top: 10px; /* Top margin */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Show popover when hovering over location or amenities */
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block; /* Display popover on hover */
+}
